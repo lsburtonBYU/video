@@ -25,6 +25,7 @@ article {
   max-width: 60rem;
   align-self: center;
   margin-bottom: 4rem;
+  padding: 0 1rem;
 }
 
 .hero {
@@ -32,16 +33,19 @@ article {
   position: relative;
 }
 
-.hero h1 {
+.hero .overlay {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+}
+
+.hero h1 {
   font-size: clamp(6rem, 0.3704rem + 23.7037vw, 30rem);
   font-weight: 900;
   line-height: 1;
+  padding: 1rem 1rem 2rem;
   margin: 0;
 
   color: #555;
