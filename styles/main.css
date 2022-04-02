@@ -44,6 +44,7 @@ article {
 .hero h1 {
   font-size: clamp(6rem, 0.3704rem + 23.7037vw, 30rem);
   font-weight: 900;
+  letter-spacing: -0.02em;
   line-height: 1;
   padding: 1rem 1rem 2rem;
   margin: 0;

@@ -28,9 +28,20 @@
   <article>
 
     <h2>Basic recommendations</h2>
+    <p><a href="https://handbrake.fr/">Handbrake</a> is free open-source software to convert and compress video</p>
     <ul>
-      <li>A WebM container using the VP9 codec for video and the Opus codec for audio.</li>
-      <li>An MP4 container and the AVC (H.264) video codec, ideally with AAC as your audio codec</li>
+      <li>Keep video below 30 seconds</li>
+      <li>Aim for under 10MB size</li>
+      <li>Encoding
+        <ul>
+          <li>A WebM container using the VP9 codec for video and the Opus codec for audio.</li>
+          <li>An MP4 container and the AVC (H.264) video codec, ideally with AAC as your audio codec</li>
+        </ul>
+      </li>
+      <li>Convert to 720p</li>
+      <li>Remove audio</li>
+      <li>Lower frames per second (FPS) to 24</li>
+      <li>Reduce content quality</li>
     </ul>
     <h3>Attributes</h3>
     <dl>
@@ -40,7 +51,8 @@
       <dt>muted</dt>
       <dd>The video will play muted. Most browser will not allow autoplay sound unless the user has interacted with the
         page.</dd>
-
+      <dt>loop</dt>
+      <dd>loop the video (continuous play)</dd>
       <dt>playsinline</dt>
       <dd>Historically has been required for video to play in iOS. I haven't tested it recently</dd>
       <dt>controls</dt>
