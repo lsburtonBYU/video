@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #000;
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+
+article {
+  max-width: 60rem;
+  align-self: center;
+  margin-bottom: 4rem;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-size: clamp(6rem, 0.3704rem + 23.7037vw, 30rem);
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+
+  color: #555;
+  mix-blend-mode: difference;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

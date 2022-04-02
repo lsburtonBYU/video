@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="assets/gulls.webm" type="video/webm">
+      <source src="assets/gulls.mp4" type="video/mp4">
+
+      Your browser doesn't support HTML5 video tag.
+    </video>
+    <h1>Video</h1>
+  </div>
+  <article>
+
+    <h2>Basic recommendations</h2>
+    <ul>
+      <li>A WebM container using the VP9 codec for video and the Opus codec for audio.</li>
+      <li>An MP4 container and the AVC (H.264) video codec, ideally with AAC as your audio codec</li>
+    </ul>
+    <h3>Attributes</h3>
+    <dl>
+      <dt>autoplay</dt>
+      <dd>starts the video on page load. This often will not work unless the muted attribute exists. Will cause the
+        video to download as soon as possible, so the preload attribute is redundant</dd>
+      <dt>muted</dt>
+      <dd>The video will play muted. Most browser will not allow autoplay sound unless the user has interacted with the
+        page.</dd>
+
+      <dt>playsinline</dt>
+      <dd>Historically has been required for video to play in iOS. I haven't tested it recently</dd>
+      <dt>controls</dt>
+      <dd>show video controls</dd>
+    </dl>
+    <h3>Bonus</h3>
+    <p>See thru font using <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode">mix-blend-mode</a>
+    </p>
+  </article>
+</body>
+
+</html>
